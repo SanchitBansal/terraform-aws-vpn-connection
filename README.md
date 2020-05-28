@@ -13,22 +13,22 @@ Here you have the options to create:
 
 ```hcl
 module "vpn_connection" {
-source                = "github.com/SanchitBansal/terraform-aws-vpn-connection.git?ref=master"
-environment           = "test"
-profile               = "nonprod"
+  source                = "github.com/SanchitBansal/terraform-aws-vpn-connection.git?ref=master"
+  environment           = "test"
+  profile               = "nonprod"
 
-customer_gateway_id   = "cgw-xxxxx"
-vpn_gateway_id        = "vgw-xxxx"
-vpn_connection_name   = "Indiaoffice"
+  customer_gateway_id   = "cgw-xxxxx"
+  vpn_gateway_id        = "vgw-xxxx"
+  vpn_connection_name   = "Indiaoffice"
 
-monitoring            = "true"
-endpoint              = "https://events.pagerduty.com/integration/xxxxxxxxxxxxxxxxx/enqueue"
-endpoint_auto_confirms = "true"
+  monitoring            = "true"
+  endpoint              = "https://events.pagerduty.com/integration/xxxxxxxxxxxxxxxxx/enqueue"
+  endpoint_auto_confirms = "true"
 
-custom_tags = {
-  businessunit = "techteam"
-  organization "github"
-}  
+  custom_tags = {
+    businessunit = "techteam"
+    organization "github"
+  }  
 }
 ```
 
