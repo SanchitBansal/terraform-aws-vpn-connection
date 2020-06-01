@@ -58,7 +58,7 @@ module "vpn_connection" {
  endpoint_auto_confirms = "true"
  custom_tags = {
    businessunit = "techteam"
-   organization "github"
+   organization = "github"
  }
 }
 ```
@@ -80,7 +80,7 @@ module "vpn_connection" {
  endpoint              = ""
  custom_tags = {
    businessunit = "techteam"
-   organization "github"
+   organization = "github"
  }
 }
 ```
