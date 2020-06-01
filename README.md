@@ -27,7 +27,7 @@ module "vpn_connection" {
 
   custom_tags = {
     businessunit = "techteam"
-    organization "github"
+    organization = "github"
   }  
 }
 ```
